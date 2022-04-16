@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="11.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.24" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.24" />
+    <PackageReference Include="Refit" Version="6.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Empresa.ProdutosApi.Domains.CQRS\Empresa.ProdutosApi.Domains.CQRS.csproj" />
+    <ProjectReference Include="..\Empresa.ProdutosApi.Infra.Data\Empresa.ProdutosApi.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
