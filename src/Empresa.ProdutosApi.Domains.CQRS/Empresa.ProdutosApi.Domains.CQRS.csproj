@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Empresa.ProdutosApi.Domains.CQRS.Core\Empresa.ProdutosApi.Domains.CQRS.Core.csproj" />
+    <ProjectReference Include="..\Empresa.ProdutosApi.Domains\Empresa.ProdutosApi.Domains.csproj" />
+  </ItemGroup>
+
+</Project>
