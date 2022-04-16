@@ -1,3 +1,4 @@
+using Empresa.ProdutosApi.Infra.IoC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -64,6 +65,10 @@ namespace Empresa.ProdutosApi
             });
 
             #endregion Swegger
+
+            services.AddContextDependency(Configuration);
+            services.AddDependency();
+            services.AddOthersDependency();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
